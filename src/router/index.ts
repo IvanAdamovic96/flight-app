@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import AboutView from '@/views/AboutView.vue'
 import MovieView from '@/views/MovieView.vue'
 import MoviesListView from '@/views/MoviesListView.vue'
+import FlightView from '@/views/FlightView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -22,6 +23,14 @@ const router = createRouter({
       meta: {
         title: 'About'
       }
+    },
+    {
+      path: '/flight/:id',
+      name: 'flight',
+      meta: {
+        title: 'Flight'
+      },
+      component: FlightView
     },
     {
       path: '/movie/:link',

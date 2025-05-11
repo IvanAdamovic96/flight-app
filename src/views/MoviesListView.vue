@@ -29,7 +29,7 @@ axios.get('https://movie.pequla.com/api/movie')
                 </ul>
             </li>
         </ul>
-        <pre>{{ movies }}</pre>
+        <!-- <pre>{{ movies }}</pre> -->
     </div>
     <div v-else>Podaci se ucitavaju</div>
 </template>
